@@ -1,0 +1,21 @@
+{
+  "name": "docker-line-notify",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Scott Lee",
+      "email": "mymislife@gmail.com"
+    }
+  ],
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "engines": {
+    "node": ">=4.3.2"
+  },
+  "dependencies": {
+    "restify": "^7.2.1",
+    "restling": "^0.9.1"
+  }
+}
