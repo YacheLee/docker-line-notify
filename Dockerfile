@@ -15,5 +15,5 @@ COPY package.json .
 RUN yarn --production
 
 COPY . .
-RUN npm start
+CMD npm start
 EXPOSE 3000

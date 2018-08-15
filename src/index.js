@@ -1,6 +1,7 @@
 const restify = require('restify');
 const restling = require('restling');
-const {url, default_access_token, default_message} = require('./config');
+const shutdown = require('./shutdown');
+const {api_url, default_message, default_access_token} = require('./config');
 
 const server = restify.createServer({
     name: 'line-notify',
@@ -17,7 +18,7 @@ server.post('/', (req, res)=> {
     const headers = {'content-type': 'multipart/form-data;', "authorization": `Bearer ${access_token}`};
     const data = {message};
 
-    restling.post(url, {headers, data}).then(({data})=>{
+    restling.post(api_url, {headers, data}).then(({data})=>{
         res.json(data);
     }).catch(({data: msg})=>{
         console.error(msg);
@@ -28,3 +29,6 @@ server.post('/', (req, res)=> {
 server.listen(3000, () => {
     console.log('%s listening at %s', server.name, server.url);
 });
+
+process.on('SIGINT', shutdown);
+process.on('SIGTERM', shutdown);
