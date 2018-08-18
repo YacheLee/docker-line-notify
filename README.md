@@ -27,3 +27,21 @@ curl http://localhost:8000 -X POST -H "Content-Type: application/json" -d '{"mes
 curl http://localhost:3000 -X POST -H "Content-Type: application/json" -d '{"message":"I am robot!", "access_token": "YOUR_NEW_TOKEN"}'
 ```
 
+# Hint
+If your service has been set the default_access_token, every time you invoke the service, you don't have to carry to token.
+
+# Docker environment variables
+    default_access_token: String,
+    default_message: String
+
+# RESTFul API
+Request URL: http://localhost:8000,
+Method: POST,
+Content-Type: application/json,
+Data:
+    access_token: "",
+    message: ""
+
+# License declaration
+This open source is MIT-based.
+The rest of license and right should be referred to [https://line.me](Line corporation).
