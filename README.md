@@ -6,7 +6,7 @@
 1. Go to [https://notify-bot.line.me](https://notify-bot.line.me)
 2. Login
 3. Go to [https://notify-bot.line.me/my/](https://notify-bot.line.me/my/) 
-4. Click Generate Token
+4. Click Generate Token ![image](step3.png)
 5. Copy the generated token
 
 ##### Usage
