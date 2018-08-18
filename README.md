@@ -35,7 +35,7 @@ If your service has been set the default_access_token, every time you invoke the
     default_message: String
 
 # RESTFul API
-Request URL: http://localhost:8000,
+Request URL: [http://localhost:8000](http://localhost:8000),
 Method: POST,
 Content-Type: application/json,
 Data:
@@ -44,4 +44,4 @@ Data:
 
 # License declaration
 This open source is MIT-based.
-The rest of license and right should be referred to [https://line.me](Line corporation).
+The rest of the license and the right should be referred to [https://line.me](https://line.me).
