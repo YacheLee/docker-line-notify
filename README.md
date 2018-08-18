@@ -13,11 +13,13 @@ To help developers to talk with Line chatbot.
 4. Click Generate Token ![image](step3.png)
 5. Copy the generated token
 
-# Usage
+# Setup by docker
 
 ```
 docker run -d -p 8000:3000 --env default_access_token=YOUR_DEFAULT_TOKEN --env default_message=HelloWorld mymislife/docker-line-notify
 ```
+
+# Usage by curl
 ```
 curl http://localhost:8000 -X POST -H "Content-Type: application/json" -d '{"message":"I am robot!"}'
 ```
