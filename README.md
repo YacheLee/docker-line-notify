@@ -28,7 +28,7 @@ curl http://localhost:3000 -X POST -H "Content-Type: application/json" -d '{"mes
 ```
 
 # Hint
-If your service has been set the default_access_token, every time you invoke the service, you don't have to carry to token.
+If your service has been set the default_access_token, every time you invoke the service, you don't have to carry the token.
 
 # Docker environment variables
     default_access_token: String,
