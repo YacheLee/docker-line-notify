@@ -10,7 +10,7 @@ To help developers to talk with Line chatbot.
 1. Go to [https://notify-bot.line.me](https://notify-bot.line.me)
 2. Login
 3. Go to [https://notify-bot.line.me/my/](https://notify-bot.line.me/my/) 
-4. Click Generate Token ![image](step3.png)
+4. Click Generate Token ![image](https://raw.githubusercontent.com/YacheLee/docker-line-notify/master/step3.png)
 5. Copy the generated token
 
 # Setup by docker
@@ -28,20 +28,26 @@ curl http://localhost:3000 -X POST -H "Content-Type: application/json" -d '{"mes
 ```
 
 # Hint
-If your service has been set the default_access_token, every time you invoke the service, you don't have to carry to token.
+If your service has been set the default_access_token, every time you invoke the service, you don't have to carry the token.
 
 # Docker environment variables
     default_access_token: String,
     default_message: String
 
 # RESTFul API
-Request URL: http://localhost:3000,
-Method: POST,
-Content-Type: application/json,
-Data:
-    access_token: "",
-    message: ""
+```Request URL: [http://localhost:3000](http://localhost:3000),
 
+Method: POST,
+
+Content-Type: application/json,
+
+Data:
+    access_token: ""
+    
+    message: ""
+    
+```
 # License declaration
 This open source is MIT-based.
-The rest of license and right should be referred to [https://line.me](Line corporation).
+
+The rest of the license and the right should be referred to [https://line.me](https://line.me).
