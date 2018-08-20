@@ -12,6 +12,10 @@ server.use(restify.plugins.acceptParser(server.acceptable));
 server.use(restify.plugins.queryParser());
 server.use(restify.plugins.bodyParser());
 
+server.get('/healthcheck', (req, res)=> {
+    res.json({msg: "it works!"});
+});
+
 server.post('/', (req, res)=> {
     const {body={}} = req;
     const {message = default_message, access_token=default_access_token} = body;
