@@ -16,12 +16,12 @@ To help developers to talk with Line chatbot.
 # Setup by docker
 
 ```
-docker run -d -p 8000:3000 --env default_access_token=YOUR_DEFAULT_TOKEN --env default_message=HelloWorld mymislife/docker-line-notify
+docker run -d -p 3000:3000 --env default_access_token=YOUR_DEFAULT_TOKEN --env default_message=HelloWorld mymislife/docker-line-notify
 ```
 
 # Usage by curl
 ```
-curl http://localhost:8000 -X POST -H "Content-Type: application/json" -d '{"message":"I am robot!"}'
+curl http://localhost:3000 -X POST -H "Content-Type: application/json" -d '{"message":"I am robot!"}'
 ```
 ```
 curl http://localhost:3000 -X POST -H "Content-Type: application/json" -d '{"message":"I am robot!", "access_token": "YOUR_NEW_TOKEN"}'
@@ -35,7 +35,7 @@ If your service has been set the default_access_token, every time you invoke the
     default_message: String
 
 # RESTFul API
-Request URL: http://localhost:8000,
+Request URL: http://localhost:3000,
 Method: POST,
 Content-Type: application/json,
 Data:
