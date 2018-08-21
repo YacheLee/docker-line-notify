@@ -35,9 +35,8 @@ If your service has been set the default_access_token, every time you invoke the
     default_message: String
 
 # RESTFul API
-```Request URL: [http://localhost:3000](http://localhost:3000),
-
-Method: POST,
+```
+[POST] [http://localhost:3000](http://localhost:3000),
 
 Content-Type: application/json,
 
@@ -46,6 +45,9 @@ Data:
     
     message: ""
     
+    
+[GET] [http://localhost:3000/healthcheck](http://localhost:3000/healthcheck),
+    Response: {msg: "it works!"} 
 ```
 # License declaration
 This open source is MIT-based.
